@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#b47b91">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Notre Mariage">
+<link rel="manifest" href="manifest.json">
+<title>Notre Mariage — Isaora & David</title>
+<style>
+:root{--rose:#b47b91;--rose-pale:#f7e9ee;--blue:#c7dff0;--ivory:#fffdf7;--green:#b9c8b1;--ink:#453942;--muted:#857780;--line:#eadfe3;--white:#fff;--shadow:0 8px 26px #69455712}
+*{box-sizing:border-box}body{margin:0;background:#fcf8f6;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;padding-bottom:94px}button,input,select,textarea{font:inherit}button{cursor:pointer}.hero{padding:28px 20px 24px;background:linear-gradient(135deg,#f1dce4,#dceaf4 58%,#f8f0df);border-radius:0 0 28px 28px}.eyebrow{font-size:11px;letter-spacing:2px;font-weight:750;color:#876173}.hero h1{font:34px Georgia,serif;margin:9px 0 6px}.hero p{margin:0;color:#685864}.countdown{display:inline-flex;align-items:baseline;gap:8px;margin-top:17px;background:#ffffff9c;padding:9px 13px;border-radius:15px}.countdown strong{font-size:25px}.wrap{padding:18px;max-width:850px;margin:auto}.topline{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:4px 0 14px}.topline h2{margin:0;font:27px Georgia,serif}.muted{color:var(--muted);font-size:13px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.card{background:white;border:1px solid #f0e5e8;border-radius:20px;padding:16px;box-shadow:var(--shadow);margin-bottom:13px}.metric{min-height:112px}.metric .ico{width:36px;height:36px;border-radius:12px;background:var(--rose-pale);display:grid;place-items:center;font-size:19px}.metric strong{display:block;font-size:20px;margin:10px 0 3px}.metric span{font-size:12px;color:var(--muted)}.section-title{font-weight:750;margin:7px 0 12px}.btn{border:0;border-radius:13px;padding:11px 14px;background:var(--rose);color:white;font-weight:700}.btn.secondary{background:var(--rose-pale);color:#875a6d}.btn.ghost{background:#f7f3f4;color:var(--ink)}.btn.danger{background:#fae9e9;color:#9c3e4a}.btn.small{padding:7px 10px;font-size:12px}.full{width:100%}.row{display:flex;gap:10px;align-items:center}.row>*{min-width:0}.between{justify-content:space-between}.item{display:flex;gap:10px;align-items:flex-start;padding:12px 0;border-top:1px solid #f2e9ec}.item:first-child{border-top:0}.item-main{flex:1;min-width:0}.item-main strong{display:block;overflow-wrap:anywhere}.item-main small{display:block;color:var(--muted);margin-top:4px;line-height:1.4}.actions{display:flex;gap:6px;flex-wrap:wrap;margin-top:9px}.badge{font-size:11px;background:#f3edf0;padding:5px 8px;border-radius:99px;display:inline-block}.badge.ok{background:#e7f2e6;color:#4d7350}.badge.pending{background:#fff1d9;color:#8a672d}.empty{color:var(--muted);text-align:center;padding:25px 8px;font-size:14px}.progress{height:8px;background:#f1e7eb;border-radius:9px;overflow:hidden}.progress span{display:block;height:100%;background:var(--rose);width:0}.tabs{position:fixed;bottom:0;left:0;right:0;z-index:5;background:#fffdf7f2;backdrop-filter:blur(16px);border-top:1px solid var(--line);display:flex;overflow-x:auto;padding:8px max(8px,env(safe-area-inset-right)) calc(8px + env(safe-area-inset-bottom)) max(8px,env(safe-area-inset-left));gap:4px}.tab{flex:1;min-width:65px;border:0;background:transparent;color:#7e7078;padding:7px 4px;border-radius:12px;font-size:10px}.tab .sym{display:block;font-size:19px;margin-bottom:4px}.tab.active{background:var(--rose-pale);color:#8c536b;font-weight:750}.field{margin:12px 0}.field label{display:block;font-size:12px;font-weight:750;margin-bottom:6px;color:#77656f}.field input,.field select,.field textarea{width:100%;border:1px solid #e7dce1;background:#fffdfd;border-radius:12px;padding:12px;color:var(--ink);outline-color:var(--rose)}.field textarea{min-height:80px;resize:vertical}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:0 12px}.span2{grid-column:1/-1}.modal{position:fixed;inset:0;background:#38283277;display:none;z-index:10;align-items:flex-end;justify-content:center}.modal.open{display:flex}.sheet{width:100%;max-width:650px;max-height:92vh;overflow:auto;background:var(--ivory);border-radius:24px 24px 0 0;padding:20px 18px calc(22px + env(safe-area-inset-bottom))}.sheet h3{font:25px Georgia,serif;margin:0 0 8px}.sheethead{display:flex;justify-content:space-between;align-items:center}.close{border:0;background:#f2e6eb;border-radius:50%;width:35px;height:35px;font-size:20px}.notice{padding:12px;border-radius:13px;background:#f5eef2;font-size:12px;color:#765d6a;line-height:1.5}.swatches{display:flex;gap:12px}.swatch{text-align:center;font-size:11px;color:var(--muted);flex:1}.swatch i{display:block;height:35px;border-radius:12px;border:1px solid #0000000c;margin-bottom:5px}.hidden{display:none!important}.search{margin:10px 0 14px}.search input{width:100%;padding:11px 13px;border:1px solid var(--line);border-radius:13px;background:white}
+@media(min-width:650px){.hero{padding:36px max(28px,calc((100% - 800px)/2)) 28px}.wrap{padding:24px}.grid{grid-template-columns:repeat(4,minmax(0,1fr))}.sheet{border-radius:24px;margin-bottom:4vh}.modal{align-items:center;padding:16px}.tabs{justify-content:center}.tab{max-width:110px}}
+</style>
+</head>
+<body>
+<header class="hero">
+ <div class="eyebrow">NOTRE MARIAGE</div><h1>Isaora & David</h1><p>7 juillet 2029 · La Réunion</p>
+ <div class="countdown"><strong id="days">—</strong><span>jours avant le grand oui ♡</span></div>
+</header>
+<main class="wrap" id="app"></main>
+<nav class="tabs" id="tabs"></nav>
+<div class="modal" id="modal" role="dialog" aria-modal="true"><div class="sheet"><div class="sheethead"><h3 id="modalTitle">Ajouter</h3><button class="close" onclick="closeModal()" aria-label="Fermer">×</button></div><div id="modalBody"></div></div></div>
+<script>
+const STORE_KEY='notre-mariage-isaora-david-v1';
+const weddingDate='2029-07-07';
+const initial={
+ budgetLimit:15000,
+ tasks:[
+  {id:crypto.randomUUID(),title:'Définir le lieu de réception',category:'Lieu',due:'',done:false},
+  {id:crypto.randomUUID(),title:'Établir la liste des invités',category:'Invités',due:'',done:false},
+  {id:crypto.randomUUID(),title:'Comparer les devis traiteur',category:'Traiteur',due:'',done:false},
+  {id:crypto.randomUUID(),title:'Choisir le photographe',category:'Prestataires',due:'',done:false}
+ ],
+ guests:[],expenses:[],vendors:[],ideas:[],docs:[]
+};
+let data=loadData(),tab='home',query='';
+function loadData(){try{return {...structuredClone(initial),...JSON.parse(localStorage.getItem(STORE_KEY)||'{}')}}catch{return structuredClone(initial)}}
+function save(){localStorage.setItem(STORE_KEY,JSON.stringify(data));render()}
+function id(){return crypto.randomUUID()}
+function esc(v=''){return String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function euro(v){return (Number(v)||0).toLocaleString('fr-FR',{style:'currency',currency:'EUR',maximumFractionDigits:2})}
+function daysLeft(){return Math.max(0,Math.ceil((new Date(weddingDate+'T00:00:00')-new Date(new Date().toDateString()))/86400000))}
+document.getElementById('days').textContent=daysLeft();
+const tabs=[
+ ['home','⌂','Accueil'],['tasks','☷','Organisation'],['guests','♧','Invités'],
+ ['budget','€','Budget'],['vendors','✧','Prestataires'],['ideas','♡','Inspiration'],['docs','▤','Documents']
+];
+function renderTabs(){document.getElementById('tabs').innerHTML=tabs.map(([k,s,n])=>`<button class="tab ${tab===k?'active':''}" onclick="go('${k}')"><span class="sym">${s}</span>${n}</button>`).join('')}
+function go(k){tab=k;query='';render()}
+function pageHead(title,sub,button=''){return `<div class="topline"><div><h2>${title}</h2><div class="muted">${sub}</div></div>${button?`<button class="btn" onclick="${button}">＋ Ajouter</button>`:''}</div>`}
+function metric(icon,val,label){return `<div class="card metric"><div class="ico">${icon}</div><strong>${val}</strong><span>${label}</span></div>`}
+function item(title,sub,actions='',badge=''){return `<div class="item"><div class="item-main"><strong>${esc(title)}</strong><small>${esc(sub||'')}</small>${badge?`<div style="margin-top:7px">${badge}</div>`:''}${actions?`<div class="actions">${actions}</div>`:''}</div></div>`}
+function editBtn(type,x){return `<button class="btn secondary small" onclick="editItem('${type}','${x.id}')">Modifier</button><button class="btn danger small" onclick="removeItem('${type}','${x.id}')">Supprimer</button>`}
+function filterBox(){return `<div class="search"><input placeholder="Rechercher…" value="${esc(query)}" oninput="query=this.value;render(false)"></div>`}
+function match(s){return !query||JSON.stringify(s).toLowerCase().includes(query.toLowerCase())}
+function render(rebuildTabs=true){
+ if(rebuildTabs)renderTabs();
+ const root=document.getElementById('app');
+ const spent=data.expenses.reduce((a,x)=>a+(+x.paid||0),0),planned=data.expenses.reduce((a,x)=>a+(+x.amount||0),0);
+ const tasksDone=data.tasks.filter(x=>x.done).length;
+ let html='';
+ if(tab==='home'){
+  const next=data.tasks.filter(x=>!x.done).slice(0,4);
+  html=`<div class="grid">${metric('€',euro((+data.budgetLimit||0)-spent),'Budget encore disponible')}${metric('♧',data.guests.length,'Invités enregistrés')}${metric('✓',`${tasksDone}/${data.tasks.length}`,'Tâches terminées')}${metric('✧',data.vendors.length,'Prestataires enregistrés')}</div>
+  <div class="card"><div class="section-title">Les prochaines étapes</div>${next.length?next.map(x=>item(x.title,x.category,`<button class="btn secondary small" onclick="toggleTask('${x.id}')">✓ Terminer</button>`)).join(''):'<div class="empty">Tout est fait pour le moment. Bravo !</div>'}<button class="btn secondary full" onclick="go('tasks')">Voir toutes les tâches</button></div>
+  <div class="card"><div class="section-title">Notre palette romantique</div><div class="swatches"><div class="swatch"><i style="background:#d9b0bf"></i>Rose poudré</div><div class="swatch"><i style="background:#bcd9ee"></i>Bleu ciel</div><div class="swatch"><i style="background:#fffdf7"></i>Ivoire</div><div class="swatch"><i style="background:#b9c8b1"></i>Eucalyptus</div></div></div>
+  <div class="card"><div class="section-title">Aperçu du budget</div><div class="row between"><span class="muted">Dépenses payées</span><strong>${euro(spent)}</strong></div><div class="progress" style="margin:10px 0"><span style="width:${Math.min(100,spent/Math.max(1,+data.budgetLimit)*100)}%"></span></div><div class="row between muted"><span>Devis enregistrés : ${euro(planned)}</span><button class="btn secondary small" onclick="go('budget')">Gérer le budget</button></div></div>`;
+ } else if(tab==='tasks'){
+  html=pageHead('Organisation','Planifiez chaque étape du mariage.',"openForm('task')")+`<div class="card">${data.tasks.filter(match).length?data.tasks.filter(match).map(x=>`<div class="item"><input aria-label="Tâche terminée" type="checkbox" ${x.done?'checked':''} onchange="toggleTask('${x.id}')" style="margin-top:4px;width:19px;height:19px;accent-color:var(--rose)"><div class="item-main"><strong style="${x.done?'text-decoration:line-through;opacity:.6':''}">${esc(x.title)}</strong><small>${esc(x.category)}${x.due?' · Échéance : '+esc(x.due):''}</small><div class="actions">${editBtn('task',x)}</div></div></div>`).join(''):'<div class="empty">Aucune tâche trouvée. Ajoutez la première !</div>'}</div>`;
+ } else if(tab==='guests'){
+  const confirmed=data.guests.filter(x=>x.status==='Confirmé').length;
+  html=pageHead('Invités',`${data.guests.length} invité(s) · ${confirmed} confirmé(s)`,"openForm('guest')")+filterBox()+`<div class="card">${data.guests.filter(match).length?data.guests.filter(match).map(x=>item(x.name,`${x.group||'Sans groupe'}${x.plusOne?' · + accompagnant':''}${x.meal?' · '+x.meal:''}`,editBtn('guest',x),`<span class="badge ${x.status==='Confirmé'?'ok':x.status==='Absent'?'':'pending'}">${esc(x.status)}</span>`)).join(''):'<div class="empty">Ajoutez vos proches et suivez leurs réponses ici.</div>'}</div>`;
+ } else if(tab==='budget'){
+  html=pageHead('Budget',`Enveloppe : ${euro(data.budgetLimit)}`,"openForm('expense')")+`<div class="card"><div class="row between"><span>Budget total</span><strong>${euro(data.budgetLimit)}</strong></div><div class="row between" style="margin-top:12px"><span>Dépenses prévues</span><strong>${euro(planned)}</strong></div><div class="row between" style="margin-top:12px"><span>Déjà payé</span><strong>${euro(spent)}</strong></div><div class="row between" style="margin-top:12px"><span>Reste disponible</span><strong>${euro((+data.budgetLimit||0)-spent)}</strong></div><div class="progress" style="margin:12px 0"><span style="width:${Math.min(100,spent/Math.max(1,+data.budgetLimit)*100)}%"></span></div><button class="btn secondary full" onclick="openBudget()">Modifier le budget total</button></div><div class="card"><div class="section-title">Dépenses et acomptes</div>${data.expenses.length?data.expenses.filter(match).map(x=>item(x.title,`${x.category||'Autre'} · Payé : ${euro(x.paid)} / ${euro(x.amount)}`,editBtn('expense',x))).join(''):'<div class="empty">Aucune dépense enregistrée. Ajoutez vos devis et acomptes.</div>'}</div>`;
+ } else if(tab==='vendors'){
+  html=pageHead('Prestataires','Contacts, devis et réservations au même endroit.',"openForm('vendor')")+filterBox()+`<div class="card">${data.vendors.filter(match).length?data.vendors.filter(match).map(x=>item(x.name,`${x.category||'Autre'}${x.contact?' · '+x.contact:''}${+x.quote?' · Devis : '+euro(x.quote):''}${x.notes?' · '+x.notes:''}`,editBtn('vendor',x),`<span class="badge ${x.status==='Réservé'||x.status==='Payé'?'ok':'pending'}">${esc(x.status)}</span>`)).join(''):'<div class="empty">Ajoutez vos salles, traiteurs, photographes, DJ, fleuristes et autres prestataires.</div>'}</div><div class="notice">La recherche de professionnels sur Internet n'est pas intégrée à cette première version : vous pouvez enregistrer ici les contacts et devis que vous trouvez.</div>`;
+ } else if(tab==='ideas'){
+  html=pageHead('Inspiration','Toutes vos idées pour un mariage à votre image.',"openForm('idea')")+filterBox()+`<div class="card">${data.ideas.filter(match).length?data.ideas.filter(match).map(x=>item(x.title,x.category+(x.notes?' · '+x.notes:''),editBtn('idea',x))).join(''):'<div class="empty">Gardez ici vos idées de fleurs, décoration, robe, musique, faire-part et cérémonie.</div>'}</div>`;
+ } else {
+  html=pageHead('Documents','Indexez vos devis, contrats et notes utiles.',"openForm('doc')")+filterBox()+`<div class="card">${data.docs.filter(match).length?data.docs.filter(match).map(x=>item(x.title,`${x.category||'Document'}${x.notes?' · '+x.notes:''}`,editBtn('doc',x))).join(''):'<div class="empty">Ajoutez les noms de vos documents et des notes pour les retrouver facilement.</div>'}</div><div class="notice">Cette version garde les titres et notes des documents, pas encore les fichiers eux-mêmes. Évitez d'y inscrire des informations sensibles.</div>`;
+ }
+ root.innerHTML=html+`<div style="height:8px"></div>`;
+}
+function toggleTask(taskId){const x=data.tasks.find(x=>x.id===taskId);if(x){x.done=!x.done;save()}}
+const configs={
+ task:{title:'Tâche',fields:[['title','Nom de la tâche','text'],['category','Catégorie','text'],['due','Date limite','date'],['done','Terminée','checkbox']]},
+ guest:{title:'Invité',fields:[['name','Prénom et nom','text'],['group','Groupe (famille, amis…)','text'],['status','Réponse','select',['En attente','Confirmé','Absent']],['plusOne','Accompagnant prévu','checkbox'],['meal','Repas / note utile','text']]},
+ expense:{title:'Dépense',fields:[['title','Nom de la dépense','text'],['category','Catégorie','text'],['amount','Montant prévu (€)','number'],['paid','Montant payé (€)','number'],['due','Échéance du paiement','date']]},
+ vendor:{title:'Prestataire',fields:[['name','Nom du prestataire','text'],['category','Catégorie','text'],['contact','Téléphone ou e-mail','text'],['quote','Montant du devis (€)','number'],['status','Statut','select',['À contacter','Devis demandé','Devis reçu','Réservé','Payé']],['notes','Notes','textarea']]},
+ idea:{title:'Inspiration',fields:[['title','Titre de l’idée','text'],['category','Catégorie','text'],['notes','Description ou lien d’image','textarea']]},
+ doc:{title:'Document',fields:[['title','Nom du document','text'],['category','Catégorie','text'],['notes','Notes ou emplacement du fichier','textarea']]}
+};
+let editing=null,editingType=null;
+function openForm(type,obj=null){
+ editing=obj?obj.id:null;editingType=type;const c=configs[type],x=obj||{};
+ document.getElementById('modalTitle').textContent=(obj?'Modifier':'Ajouter')+' · '+c.title;
+ document.getElementById('modalBody').innerHTML=`<form id="editForm" onsubmit="submitForm(event,'${type}')"><div class="formgrid">${c.fields.map(([k,label,t,opts])=>{
+ let field='';
+ if(t==='checkbox')field=`<label style="display:flex;align-items:center;gap:9px;margin:14px 0"><input style="width:19px;height:19px;accent-color:var(--rose)" type="checkbox" name="${k}" ${x[k]?'checked':''}> ${label}</label>`;
+ else if(t==='select')field=`<div class="field"><label>${label}</label><select name="${k}">${opts.map(o=>`<option ${((x[k]||opts[0])===o)?'selected':''}>${esc(o)}</option>`).join('')}</select></div>`;
+ else field=`<div class="field ${t==='textarea'?'span2':''}"><label>${label}</label>${t==='textarea'?`<textarea name="${k}">${esc(x[k]||'')}</textarea>`:`<input name="${k}" type="${t}" ${t==='number'?'step="0.01" min="0"':''} value="${esc(x[k]??'')}" ${['title','name'].includes(k)?'required':''}>`}</div>`;
+ return field;
+ }).join('')}</div><button class="btn full" type="submit">Enregistrer</button></form>`;
+ document.getElementById('modal').classList.add('open');
+}
+function submitForm(e,type){e.preventDefault();const form=e.target,c=configs[type],obj={};c.fields.forEach(([k,l,t])=>{const el=form.elements[k];if(!el)return;obj[k]=t==='checkbox'?el.checked:t==='number'?(Number(el.value)||0):el.value.trim()});if(editing){const arr=arrayFor(type),i=arr.findIndex(x=>x.id===editing);if(i>=0)arr[i]={...arr[i],...obj}}else arrayFor(type).unshift({id:id(),...obj});closeModal();save()}
+function arrayFor(t){return {task:data.tasks,guest:data.guests,expense:data.expenses,vendor:data.vendors,idea:data.ideas,doc:data.docs}[t]}
+function editItem(type,itemId){const obj=arrayFor(type).find(x=>x.id===itemId);if(obj)openForm(type,obj)}
+function removeItem(type,itemId){if(confirm('Supprimer cet élément ?')){const arr=arrayFor(type);const i=arr.findIndex(x=>x.id===itemId);if(i>=0)arr.splice(i,1);save()}}
+function closeModal(){document.getElementById('modal').classList.remove('open')}
+function openBudget(){document.getElementById('modalTitle').textContent='Budget total';document.getElementById('modalBody').innerHTML=`<div class="field"><label>Budget total (€)</label><input id="budgetInput" type="number" min="0" step="100" value="${+data.budgetLimit||15000}"></div><button class="btn full" onclick="data.budgetLimit=Number(document.getElementById('budgetInput').value)||0;closeModal();save()">Enregistrer</button>`;document.getElementById('modal').classList.add('open')}
+function exportData(){const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='notre-mariage-isaora-david-sauvegarde.json';a.click();URL.revokeObjectURL(url)}
+function importData(){const inp=document.createElement('input');inp.type='file';inp.accept='.json,application/json';inp.onchange=async()=>{const f=inp.files[0];if(!f)return;try{const parsed=JSON.parse(await f.text());if(!parsed.tasks||!parsed.guests||!parsed.expenses)throw Error();if(confirm('Remplacer les données actuelles par cette sauvegarde ?')){data={...structuredClone(initial),...parsed};save();alert('Sauvegarde importée.')}}catch{alert('Fichier de sauvegarde invalide.')}};inp.click()}
+render();
+if('serviceWorker' in navigator && location.protocol.startsWith('http'))navigator.serviceWorker.register('./sw.js').catch(()=>{});
+</script>
+</body>
+</html>

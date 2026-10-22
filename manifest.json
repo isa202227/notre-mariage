@@ -1,0 +1,10 @@
+{
+  "name": "Notre Mariage — Isaora & David",
+  "short_name": "Notre Mariage",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#fcf8f6",
+  "theme_color": "#b47b91",
+  "description": "Organisateur de mariage romantique pour Isaora et David",
+  "icons": []
+}
